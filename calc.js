@@ -19,7 +19,8 @@ reader.question("What would you like to calculate?", function(input){
 	console.log('num2', num2);
 
 	if(mathSymbol === '*') {
-		console.log(num1 * num2);
+		const result = num1 * num2;
+		console.log(`The product of ${num1} and ${num2} is ${result}`); 
 	// } else if(mathSymbol === '+') {
 	// 	console.log(num1 + num2);
 	// } else if(mathSymbol === '-') {
@@ -29,13 +30,16 @@ reader.question("What would you like to calculate?", function(input){
 	// } else {
 	}
 	if(mathSymbol === '+') {
-		console.log(num1+num2);
+		const result = num1 + num2;
+		console.log(`The sum of ${num1} and ${num2} is ${result}`); 
 	}
 	if(mathSymbol === '-') {
-		console.log(num1-num2);
+		const result = num1 - num2;
+		console.log(`The difference of ${num1} and ${num2} is ${result}`); 
 	}
 	if(mathSymbol === '/') {
-		console.log(num1/num2);
+		const result = num1 / num2;
+		console.log(`The quotient of ${num1} and ${num2} is ${result}`); 
 	}
 	if(mathSymbol === 's') {
 		const result = Math.sqrt(num1);
